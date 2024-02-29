@@ -1,0 +1,19 @@
+<mat-card style="margin: 7px">
+  <mat-card-content>
+    <table style="width: 330px;">
+      <tr>
+        <th>Escolhido</th>
+        <th>Multiplicador</th>
+        <th>Resultado</th>
+      </tr>
+      @for (item of tabuada; track $index) {
+      <tr>
+        <td>{{ item.numeroSelecionado }}</td>
+        <td>{{ item.numeroDaTabela }}</td>
+        <td>{{ item.resultado }}</td>
+      </tr>
+
+      }
+    </table>
+  </mat-card-content>
+</mat-card>

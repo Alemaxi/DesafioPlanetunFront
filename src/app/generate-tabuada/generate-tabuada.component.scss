@@ -1,0 +1,11 @@
+@import url('../Shared/lateral-menu.scss');
+
+.menu {
+    @extend .menu-lateral-width !optional;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

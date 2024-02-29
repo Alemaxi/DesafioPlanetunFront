@@ -1,0 +1,12 @@
+<form  [formGroup]="tabuadaForm" (submit)="addNumber()"
+    class="form-tabuada">
+    <h3>Selecion um Numero</h3>
+    <mat-form-field class="example-full-width">
+        <mat-label>Numero</mat-label>
+        <input formControlName="selectedNumber" 
+        matInput 
+        type="number">
+      </mat-form-field>
+
+      <button mat-raised-button type="submit">ADD NUMERO</button>
+</form>

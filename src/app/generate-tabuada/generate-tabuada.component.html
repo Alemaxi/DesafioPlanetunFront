@@ -1,0 +1,16 @@
+<section class="menu">
+    <h3>Números Selecionados</h3>
+
+    <div  style="max-height: 200px; overflow: auto; display: flex; flex-direction: column;
+        margin-bottom: 25px;">
+        @for (item of selectedNumbers; track $index) {
+            <span>{{item}}</span>
+        }
+    </div>
+
+    @if (selectedNumbers.length > 0) {
+        <button mat-raised-button (click)="GerarTabuadas()" style="margin-bottom: 5px;">
+            GERAR TABUADAS</button>
+        <button mat-raised-button color="accent" (click)="LimparNumeros()">LIMPAR NÚMEROS</button>
+    }
+</section>

@@ -1,0 +1,12 @@
+@import url('../Shared/lateral-menu.scss');
+
+.form-tabuada {
+    @extend .menu-lateral-width !optional;
+    background-color: lightgray;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 15px;
+}
